@@ -1,14 +1,14 @@
 import './AddTodo.css'
 import { useState } from 'react'
-const MyTodo = (props) => {
+const MyTodo = ({todo, ondelete}) => {
 
     
     return (
       <div className="container">
-        <h4>{props.todo.title}</h4>
-        <h6>{props.todo.desc}</h6>
+        <h4>{todo.title}</h4>
+        <h6>{todo.desc}</h6>
         <div className="row">
-          <button className="delete" onClick={props.ondelete}>
+          <button className="delete" onClick={()=>{ondelete(todo)}}>
             Delete
           </button>
         </div>

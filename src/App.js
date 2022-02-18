@@ -47,7 +47,7 @@ function App() {
     <>
     <Header></Header>
     <AddTodo addTodo={addTodo}></AddTodo>
-    <Todos todos={todos}> ondelete={ondelete}</Todos>
+    <Todos todos={todos} ondelete={ondelete} />
     <Footer></Footer> 
     </>
   );
